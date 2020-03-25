@@ -13129,6 +13129,24 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    
+
+
+<div class="output_html rendered_html output_subarea ">
+<style>.container { width:100% !important; }</style>
+</div>
+
+</div>
+
+</div>
+</div>
+
   </div>
 
   
@@ -13280,7 +13298,8 @@ fig.line([10,15,35], y_fn = [10, 57, 89], options={"color": "r"})
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dashboard</span><span class="p">):</span>
         <span class="o">%</span><span class="k">pip</span> install matplotlib
         <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-        <span class="kn">from</span> <span class="nn">dynamic</span> <span class="kn">import</span> <span class="o">*</span>
+        <span class="c1">#from dynamic import *</span>
+        <span class="kn">import</span> <span class="nn">dynamic</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">image</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Image</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">dashboard</span> <span class="o">=</span> <span class="n">dashboard</span>
         
@@ -13375,27 +13394,6 @@ fig.line([10,15,35], y_fn = [10, 57, 89], options={"color": "r"})
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-cyan-fg">  File </span><span class="ansi-green-fg">&#34;&lt;ipython-input-7-71a1deede6c6&gt;&#34;</span><span class="ansi-cyan-fg">, line </span><span class="ansi-green-fg">25</span>
-<span class="ansi-red-fg">    def print_image(self):</span>
-    ^
-<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> import * only allowed at module level
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
   </div>
 
   
@@ -13475,6 +13473,46 @@ fig.line([10,15,35], y_fn = [10, 57, 89], options={"color": "r"})
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: matplotlib in /usr/lib/python3.8/site-packages (3.2.0)
+Requirement already satisfied: cycler&gt;=0.10 in /usr/lib/python3.8/site-packages (from matplotlib) (0.10.0)
+Requirement already satisfied: kiwisolver&gt;=1.0.1 in /usr/lib/python3.8/site-packages (from matplotlib) (1.1.0)
+Requirement already satisfied: numpy&gt;=1.11 in /usr/lib/python3.8/site-packages (from matplotlib) (1.18.1)
+Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,&gt;=2.0.1 in /usr/lib/python3.8/site-packages (from matplotlib) (2.4.6)
+Requirement already satisfied: python-dateutil&gt;=2.1 in /usr/lib/python3.8/site-packages (from matplotlib) (2.8.1)
+Requirement already satisfied: six in /usr/lib/python3.8/site-packages (from cycler&gt;=0.10-&gt;matplotlib) (1.14.0)
+Requirement already satisfied: setuptools in /usr/lib/python3.8/site-packages (from kiwisolver&gt;=1.0.1-&gt;matplotlib) (46.1.1)
+Note: you may need to restart the kernel to use updated packages.
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    
+
+
+
+  <div class="output_subarea output_widget_view ">
+    <button class="js-nbinteract-widget">
+      Loading widgets...
+    </button>
+  </div>
+
+</div>
+
 </div>
 </div>
 
