@@ -21,9 +21,7 @@ from IPython.display import display, Image
 #from scipy import interpolate
 #import scipy.stats as st
 
-
 from dynamic import *
-
 import nbinteract as nbi
 
 
