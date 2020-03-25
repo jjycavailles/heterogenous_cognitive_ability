@@ -13319,7 +13319,8 @@ fig.line([10,15,35], y_fn = [10, 57, 89], options={"color": "r"})
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">children</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s2">&quot;100%&quot;</span><span class="p">))</span>
         
     <span class="k">def</span> <span class="nf">print_image</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="c1">#import matplotlib.pyplot as plt</span>
+        <span class="o">%</span><span class="k">pip</span> install matplotlib -qqq
+        <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
         <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
         <span class="c1">#fig = nbi.plotting.Figure()</span>
         <span class="n">h</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">h</span>
@@ -13488,6 +13489,7 @@ Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,&gt;=2.0.1 in /u
 Requirement already satisfied: python-dateutil&gt;=2.1 in /usr/lib/python3.8/site-packages (from matplotlib) (2.8.1)
 Requirement already satisfied: six in /usr/lib/python3.8/site-packages (from cycler&gt;=0.10-&gt;matplotlib) (1.14.0)
 Requirement already satisfied: setuptools in /usr/lib/python3.8/site-packages (from kiwisolver&gt;=1.0.1-&gt;matplotlib) (46.1.1)
+Note: you may need to restart the kernel to use updated packages.
 Note: you may need to restart the kernel to use updated packages.
 </pre>
 </div>
