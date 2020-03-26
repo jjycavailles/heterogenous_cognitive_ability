@@ -152,6 +152,7 @@ class Dynamic:
         else:
             print("What do you want to plot ? (precise mode)")
         plt.legend(fontsize = 30)
+        plt.ylim(0,1)
         if(show):
             plt.show()
         return
